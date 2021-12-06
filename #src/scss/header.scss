@@ -55,7 +55,7 @@
 	background: rgba(235, 236, 239, 0.6);
 	border-radius: 3px;
 	padding: 20px;
-	max-width: 320px;
+	width: 320px;
 	margin: 8px 0px 0px 0px;
 }
 
@@ -106,6 +106,12 @@ body._touch .menu__arrow {
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 10px solid $lilacColor;
+}
+
+@media (max-width:$md3+px) {
+	body._touch .menu__arrow {
+		margin: 0px 0px 0px -5px;
+	}
 }
 
 body._touch .menu__list>li._active .menu__sub-list {
@@ -169,6 +175,10 @@ body._touch .menu__list>li._active .menu__arrow {
 		cursor: pointer;
 	}
 
+	.body._touch .menu__arrow {
+		margin: 0;
+	}
+
 	.menu__icon span,
 	.menu__icon::before,
 	.menu__icon::after {
@@ -227,6 +237,19 @@ body._touch .menu__list>li._active .menu__arrow {
 		z-index: 2;
 	}
 
+	.menu__body::before {
+		background: linear-gradient(274.54deg, rgba(127, 145, 190, 0.22) 3.85%, rgba(127, 145, 190, 0.15) 49.5%, rgba(127, 145, 190, 0.15) 94.21%);
+		box-shadow: inset 0px 0px 7px rgba(127, 145, 190, 0.3);
+		transform: rotate(90deg);
+		height: 120px;
+		width: 120px;
+		position: absolute;
+		border-radius: 50%;
+		top: 30%;
+		right: 0px;
+		left: -50px;
+	}
+
 	.menu__list>li {
 		flex-wrap: wrap;
 		margin: 0px 0px 30px 0px;
@@ -282,6 +305,7 @@ body._touch .menu__list>li._active .menu__arrow {
 	.header__phone {
 		display: none;
 	}
+
 }
 
 .social__mob,
@@ -301,9 +325,10 @@ body._touch .menu__list>li._active .menu__arrow {
 	}
 
 	.social__list {
+		font-size: 24px;
 		display: block;
-		margin-top: 20px;
-		margin-right: 15px;
+		margin-top: 30px;
+		margin-right: 20px;
 		color: #0F54B9;
 
 		&:last-child {
@@ -314,16 +339,15 @@ body._touch .menu__list>li._active .menu__arrow {
 	.header__phone-mob {
 		font-family: "Montserrat";
 		font-weight: 600;
-		font-size: 18px;
+		font-size: 22px;
 		display: block;
 		text-align: center;
 		color: $blackColor;
-		margin: 18px 0px 18px 0px;
+		margin: 25px 0px 25px 0px;
 	}
 
 	.header__btn-mob {
 		display: block;
 		text-align: center;
 	}
-
 }
