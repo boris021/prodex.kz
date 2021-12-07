@@ -120,7 +120,7 @@ body {
 	@include adaptiv-value("font-size", 60, 24, 1);
 	@include adaptiv-value("line-height", 70, 26, 1);
 	text-align: center;
-	@include adaptiv-value("margin-bottom", 120, 60, 1);
+	@include adaptiv-value("margin-bottom", 120, 50, 1);
 
 	& span {
 		color: #7F91BE;

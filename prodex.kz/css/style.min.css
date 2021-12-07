@@ -1225,7 +1225,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 @media (max-width: 1170px) {
   .title-header {
-    margin-bottom: calc(60px + 60 * ((100vw - 320px) / 850));
+    margin-bottom: calc(50px + 70 * ((100vw - 320px) / 850));
   }
 }
 .title-header span {
