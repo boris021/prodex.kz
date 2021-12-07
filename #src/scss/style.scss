@@ -117,7 +117,7 @@ body {
 
 .title-header {
 	font-weight: bold;
-	@include adaptiv-value("font-size", 60, 22, 1);
+	@include adaptiv-value("font-size", 60, 24, 1);
 	@include adaptiv-value("line-height", 70, 26, 1);
 	text-align: center;
 	@include adaptiv-value("margin-bottom", 120, 60, 1);

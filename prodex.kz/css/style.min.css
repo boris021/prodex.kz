@@ -1215,7 +1215,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 @media (max-width: 1170px) {
   .title-header {
-    font-size: calc(22px + 38 * ((100vw - 320px) / 850));
+    font-size: calc(24px + 36 * ((100vw - 320px) / 850));
   }
 }
 @media (max-width: 1170px) {
