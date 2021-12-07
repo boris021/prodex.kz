@@ -1252,7 +1252,12 @@ body._touch .menu__list > li._active .menu__arrow {
 .main__item-list {
   display: flex;
   align-items: center;
-  margin: 0px 0px 53px 0px;
+  margin-bottom: 53px;
+}
+@media (max-width: 1170px) {
+  .main__item-list {
+    margin-bottom: calc(40px + 13 * ((100vw - 320px) / 850));
+  }
 }
 
 .main__item-bg {

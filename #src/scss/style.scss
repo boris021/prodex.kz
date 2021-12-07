@@ -146,7 +146,8 @@ body {
 .main__item-list {
 	display: flex;
 	align-items: center;
-	margin: 0px 0px 53px 0px;
+	// margin: 0px 0px 53px 0px;
+	@include adaptiv-value("margin-bottom", 53, 40, 1);
 }
 
 .main__item-bg {
