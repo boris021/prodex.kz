@@ -1197,12 +1197,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 @media (max-width: 767.98px) {
   .main__container {
-    padding-top: 80px;
-  }
-}
-@media (max-width: 479.98px) {
-  .main__container {
-    padding-top: 75px;
+    padding-top: 90px;
   }
 }
 
