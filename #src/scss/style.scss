@@ -568,7 +568,7 @@ body {
 	line-height: 24px;
 	text-align: center;
 	margin: 0 auto;
-	width: 512px;
+	max-width: 512px;
 	@include adaptiv-value("margin-bottom", 46, 35, 1);
 
 }

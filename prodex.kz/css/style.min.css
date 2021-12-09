@@ -1890,7 +1890,7 @@ body._touch .menu__list > li._active .menu__arrow {
   line-height: 24px;
   text-align: center;
   margin: 0 auto;
-  width: 512px;
+  max-width: 512px;
   margin-bottom: 46px;
 }
 @media (max-width: 1170px) {
