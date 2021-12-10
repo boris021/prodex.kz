@@ -676,12 +676,12 @@ body {
 }
 
 .swiper-pagination-total {
-	font-family: Montserrat;
+	font-family: 'Montserrat';
 	font-weight: 300;
 	font-size: 14px;
 	color: #0A0A0A;
 }
 
-.swiper-pagination {
-	bottom: 0;
+.swiper-pagination-fraction {
+	bottom: 0 !important;
 }
