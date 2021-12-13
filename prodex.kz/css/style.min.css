@@ -827,6 +827,11 @@ body.ie ._ibg img {
   width: 100%;
   max-width: 800px;
 }
+@media (max-width: 479.98px) {
+  .popup__body {
+    padding: 40px 20px 40px 20px;
+  }
+}
 .popup__close {
   width: 15px;
   height: 15px;
