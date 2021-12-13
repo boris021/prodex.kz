@@ -168,4 +168,23 @@
 }
 
 //====================================================================================================
+.popup__title-policy {
+	font-weight: 600;
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.policy {
+	font-size: 14px;
+	line-height: 140%;
+	overflow: auto;
+	max-height: 70vh;
+
+}
+
+.popup__body-policy {
+	padding: 30px 35px;
+}
+
 //====================================================================================================
