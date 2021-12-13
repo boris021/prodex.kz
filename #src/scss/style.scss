@@ -104,7 +104,7 @@ body {
 // main ===================================================================================================================================
 
 .main__container {
-	padding-top: 120px;
+	@include adaptiv-value("padding-top", 120, 60, 1);
 
 	@media (max-width:$md3+px) {
 		padding-top: 90px;
@@ -142,7 +142,6 @@ body {
 .main__item-list {
 	display: flex;
 	align-items: center;
-	// margin: 0px 0px 53px 0px;
 	@include adaptiv-value("margin-bottom", 53, 40, 1);
 }
 
@@ -548,8 +547,16 @@ body {
 
 //<page__work>====================================================================================================
 .page__work {
+	transform: translate(0, 100px);
+	opacity: 0;
+	transition: all 0.3s ease 0s;
 	@include adaptiv-value("padding-top", 105, 25, 1);
 	@include adaptiv-value("padding-bottom", 74, 64, 1);
+
+	&._active {
+		transform: translate(0, 0px);
+		opacity: 1;
+	}
 }
 
 .work__container {
@@ -639,7 +646,7 @@ body {
 	max-height: 168px;
 }
 
-// сдайд===============================
+// слайд===============================
 
 .swiper-wrapper {
 	margin: 0px 0px 20px 0px;
@@ -770,8 +777,16 @@ body {
 //<prise>====================================================================================================
 
 .prise {
+	transform: translate(0, 100px);
+	opacity: 0;
+	transition: all 0.3s ease 0s;
 	padding-top: 86px;
-	padding-bottom: 90px;
+	@include adaptiv-value("padding-bottom", 90, 40, 1);
+
+	&._active {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
 }
 
 .prise__container {}
@@ -873,9 +888,17 @@ body {
 
 //<about>====================================================================================================
 .about {
+	transform: translate(0, 100px);
+	opacity: 0;
+	transition: all 0.3s ease 0s;
 	background: linear-gradient(265.83deg, #0F54B9 0%, #99B9E7 100%);
 	@include adaptiv-value("padding-top", 60, 25, 1);
 	@include adaptiv-value("padding-bottom", 50, 55, 1);
+
+	&._active {
+		transform: translate(0, 0px);
+		opacity: 1;
+	}
 }
 
 .about__body {}
