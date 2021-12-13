@@ -399,14 +399,15 @@ textarea.input {
 .checkbox__label::after {
   transition: all 0.5s ease 0s;
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   position: absolute;
   top: 0px;
   left: 0px;
   background: url(../img/icons/check.svg) center center no-repeat;
   background-color: #3B6AAE;
   border-radius: 4px;
+  border: 2px solid #3B6AAE;
   transform: scale(0);
 }
 .checkbox__text {
