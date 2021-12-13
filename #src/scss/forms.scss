@@ -292,10 +292,12 @@ textarea.input {
 		width: 20px;
 		height: 20px;
 		position: absolute;
-		top: 2px;
-		left: 2px;
+		top: 0px;
+		left: 0px;
 		background: url(../img/icons/check.svg) center center no-repeat;
 		background-color: $blueColor;
+		border-radius: 4px;
+
 		transform: scale(0);
 	}
 
