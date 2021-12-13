@@ -64,14 +64,12 @@
 	}
 }
 
-
-
 .menu__sub-list {
 	position: absolute;
 	width: 100%;
 	left: 0;
 	top: 30px;
-	background: rgba(235, 236, 239, 0.8);
+	background: rgba(235, 236, 239, 0.9);
 	border-radius: 3px;
 	padding: 20px;
 	width: 320px;
@@ -87,11 +85,11 @@
 }
 
 .menu__sub-link {
-	color: $lilacColor;
+	color: $blueHoverColor;
 }
 
 .menu__sub-link:hover {
-	color: $blueHoverColor;
+	color: $lilacColor;
 }
 
 .menu__arrow {

@@ -1032,7 +1032,7 @@ body.ie ._ibg img {
   width: 100%;
   left: 0;
   top: 30px;
-  background: rgba(235, 236, 239, 0.8);
+  background: rgba(235, 236, 239, 0.9);
   border-radius: 3px;
   padding: 20px;
   width: 320px;
@@ -1048,11 +1048,11 @@ body.ie ._ibg img {
 }
 
 .menu__sub-link {
-  color: #7F91BE;
+  color: #25579F;
 }
 
 .menu__sub-link:hover {
-  color: #25579F;
+  color: #7F91BE;
 }
 
 .menu__arrow {
