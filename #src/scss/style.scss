@@ -888,17 +888,9 @@ body {
 
 //<about>====================================================================================================
 .about {
-	transform: translate(0, 100px);
-	opacity: 0;
-	transition: all 0.3s ease 0s;
 	background: linear-gradient(265.83deg, #0F54B9 0%, #99B9E7 100%);
 	@include adaptiv-value("padding-top", 60, 25, 1);
 	@include adaptiv-value("padding-bottom", 50, 55, 1);
-
-	&._active {
-		transform: translate(0, 0px);
-		opacity: 1;
-	}
 }
 
 .about__body {}
