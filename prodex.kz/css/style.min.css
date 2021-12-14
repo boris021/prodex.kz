@@ -2694,6 +2694,12 @@ body._touch .menu__list > li._active .menu__arrow {
   font-size: 18px;
   color: #000000;
 }
+@media (max-width: 479.98px) {
+  .table th {
+    padding: 15px;
+    font-size: 16px;
+  }
+}
 
 th.center {
   text-align: center;
@@ -2703,6 +2709,12 @@ th.center {
   padding: 20px 30px;
   text-align: center;
   color: #333333;
+}
+@media (max-width: 479.98px) {
+  .table td {
+    padding: 15px;
+    font-size: 14px;
+  }
 }
 
 td.left {
