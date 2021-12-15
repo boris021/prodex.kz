@@ -1562,11 +1562,15 @@ textarea {
 
 .form_radio_btn {
 	display: inline-block;
-	margin-right: 20px;
+	margin-right: 40px;
 	margin-bottom: 10px;
 
 	&:last-child {
 		margin-right: 0;
+	}
+
+	@media (max-width:$md4+px) {
+		margin-right: 10px;
 	}
 }
 
@@ -1578,12 +1582,13 @@ textarea {
 	display: inline-block;
 	font-family: "Montserrat";
 	cursor: pointer;
-	padding: 11px 25px;
 	background: $whiteColor;
 	border-radius: 5px;
 	user-select: none;
 	font-weight: 500;
-	min-width: 160px;
+	min-width: 150px;
+	min-height: 40px;
+	line-height: 40px;
 	text-align: center;
 	font-size: 14px;
 	color: #333333;
