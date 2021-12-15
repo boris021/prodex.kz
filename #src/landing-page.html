@@ -138,54 +138,7 @@
 					</div>
 				</div>
 			</section>
-
-			<section class="order">
-				<div class="order__container _container">
-					<div class="order__body">
-						<h2 class="order-lp-title title">Как заказать сайт?</span></h2>
-
-						<div class="swiper myLpSwiper">
-							<div class="swiper-wrapper order__row">
-
-								<div class="swiper-slide slide-swiper-lp">
-									<div class="order__step">Шаг 1</div>
-									<div class="order__bg"><img src="img/order/telegram.png" alt="telegram"></div>
-									<div class="order__item-title">Оставить заявку</div>
-									<div class="order__text">Оставьте заявку на создание сайта через
-										форму на сайте, либо позвоните нам по номеру телефона <a href="tel:+77056766766">+7 705
-											676 676 6</a></div>
-								</div>
-
-								<div class="swiper-slide slide-swiper-lp item-order ">
-									<div class="order__step">Шаг 2</div>
-									<div class="order__bg"><img src="img/order/document.png" alt="document"></div>
-									<div class="order__item-title">Подписание ТЗ и договора</div>
-									<div class="order__text text-order">После заполнения брифа,
-										мы предлагаем варианты и согласовываем
-										техническое задание.</div>
-								</div>
-
-								<div class="swiper-slide slide-swiper-lp">
-									<div class="order__step">Шаг 3</div>
-									<div class="order__bg"><img src="img/order/mokup.png" alt="mokup"></div>
-									<div class="order__item-title">Создание и сдача сайта</div>
-									<div class="order__text">Разработка сайта строго по
-										ТЗ. После сдачи сайта мы предложим вам поддержку
-										и продвижение.</div>
-								</div>
-
-							</div>
-							<div class="work-pagination">
-								<div class="work-swiper-button-next _icon-arrow"></div>
-								<div class="work-swiper-button-prev _icon-arrow"></div>
-								<div class="swiper-pagination"> </div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</section>
-
+			@@include('_order.html',{})
 			<section class="portfolio">
 				<div class="portfolio__container _container">
 					<div class="portfolio__body">
@@ -237,7 +190,37 @@
 					</div>
 				</div>
 			</section>
-
+			<section class="site">
+				<div class="site__container _container">
+					<div class="site__body">
+						<div class="site__img">
+							<img src="img/site-bg.png" alt="site">
+						</div>
+						<div class="site__content">
+							<div class="site__title">Вам нужен <span>эффективный</span> сайт?</div>
+							<div class="site__text">Оставьте заявку, заполнив форму ниже - это займет не более 5 минут.
+								Или позвоните нам, мы зададим все необходимые вопросы по телефону <a href="tel:+77056766766">+7
+									705 676 67 66</a> или напишите нам в соц сети </div>
+							<div class="site__buttons">
+								<a href="#" class="btn-social btn-social_whatsapp">WhatsApp</a>
+								<a href="#" class="btn-social btn-social_telegram">Telegram</a>
+								<a href="#" class="btn-social btn-social_instagram">Instagram</a>
+							</div>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product__form">
+							<form action="#">
+								<div class="form__item">
+									<label for="text" class="form-label">Расскажите о продукте</label>
+									<textarea name="textarea" id="textarea" cols="" rows="6"
+										placeholder="Описание проекта"></textarea>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		@@include('_footer.html',{})
 	</div>

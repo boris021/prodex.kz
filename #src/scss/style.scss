@@ -1381,3 +1381,130 @@ td.left {
 	max-width: 348px;
 	margin: auto;
 }
+
+.site {
+	@include adaptiv-value("margin-top", 0, 30, 1);
+	@include adaptiv-value("margin-bottom", 70, 20, 1);
+}
+
+.site__body {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+
+	&::before {
+		position: absolute;
+		content: '';
+		bottom: -30px;
+		left: -30px;
+		background: linear-gradient(240.31deg, #CDCDCD -24.65%, #FFFFFF 88.61%);
+		box-shadow: inset 0px 0px 7px rgba(127, 145, 190, 0.3);
+		transform: rotate(90deg);
+		width: 167px;
+		height: 167px;
+		border-radius: 50%;
+		animation: pulse 2s infinite;
+
+		@media (max-width:$md3+px) {
+			display: none;
+		}
+	}
+
+	&::after {
+		position: absolute;
+		content: '';
+		bottom: -57.5px;
+		right: -57.5px;
+		background: linear-gradient(240.31deg, #CDCDCD -24.65%, #FFFFFF 88.61%);
+		box-shadow: inset 0px 0px 7px rgba(127, 145, 190, 0.3);
+		transform: rotate(90deg);
+		width: 119px;
+		height: 119px;
+		border-radius: 50%;
+		animation: pulse 2s infinite;
+		z-index: 200;
+
+		@media (max-width:$md3+px) {
+			display: none;
+		}
+	}
+}
+
+.site__img {
+	flex: 0 0 30%;
+	z-index: 2;
+
+	@media (max-width:$md3+px) {
+		display: none;
+	}
+}
+
+.site__content {
+	flex: 0 0 70%;
+	padding-right: 20px;
+
+
+	@media (max-width:$md3+px) {
+		flex: 1 1 100%;
+		padding-right: 0;
+	}
+}
+
+.site__title {
+	font-weight: 600;
+	@include adaptiv-value("font-size", 40, 24, 1);
+	@include adaptiv-value("margin-bottom", 27, 15, 1);
+
+	& span {
+		color: $lilacColor;
+	}
+}
+
+.site__text {
+	font-weight: normal;
+	@include adaptiv-value("font-size", 18, 14, 1);
+	line-height: 130%;
+	margin-bottom: 10px;
+
+	& a {
+		font-family: 'Montserrat';
+		font-weight: 500;
+	}
+}
+
+.site__buttons a {
+	display: inline-flex;
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+.product {
+	background: #F2F2F2;
+	padding: 30px;
+	position: relative;
+	z-index: 2;
+}
+
+.form-label {
+	font-weight: 500;
+	font-size: 18px;
+	margin-bottom: 20px;
+	display: block;
+}
+
+.product__form {}
+
+.form__item {}
+
+.input {}
+
+textarea {
+	width: 100%;
+	background: #FFFFFF;
+	border-radius: 3px;
+	padding: 20px;
+	font-weight: 500;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #9E9E9E;
+}
