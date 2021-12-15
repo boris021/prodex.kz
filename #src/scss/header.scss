@@ -36,31 +36,17 @@
 }
 
 .menu__link {
-	position: relative;
 	cursor: pointer;
-	line-height: 1;
 	text-decoration: none;
 	font-weight: 500;
 	font-size: 15px;
-	line-height: 18px;
 	text-align: center;
 	color: $lilacColor;
 	transition: color 0.3s ease 0s;
 
-	&:after {
-		display: block;
-		position: absolute;
-		left: 0;
-		width: 0;
-		height: 2px;
-		background-color: $lilacColor;
-		content: "";
-		transition: width 0.3s ease-out;
-	}
-
-	&:hover:after,
-	:focus:after {
-		width: 100%;
+	&:hover {
+		// color: $blueHoverColor;
+		opacity: 0.8;
 	}
 }
 

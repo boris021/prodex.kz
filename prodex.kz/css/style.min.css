@@ -1001,30 +1001,16 @@ body.ie ._ibg img {
 }
 
 .menu__link {
-  position: relative;
   cursor: pointer;
-  line-height: 1;
   text-decoration: none;
   font-weight: 500;
   font-size: 15px;
-  line-height: 18px;
   text-align: center;
   color: #7F91BE;
   transition: color 0.3s ease 0s;
 }
-.menu__link:after {
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #7F91BE;
-  content: "";
-  transition: width 0.3s ease-out;
-}
-.menu__link:hover:after,
-.menu__link :focus:after {
-  width: 100%;
+.menu__link:hover {
+  opacity: 0.8;
 }
 
 .menu__sub-list {
@@ -2007,6 +1993,7 @@ body._touch .menu__list > li._active .menu__arrow {
   background: #F2F2F2;
   border-radius: 10px;
   padding: 5px 20px;
+  min-height: 177px;
 }
 
 .item__slide {
@@ -2651,9 +2638,10 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .tarif-lp-title {
   font-weight: 600;
+  line-height: 130%;
   font-size: 30px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 @media (max-width: 1170px) {
   .tarif-lp-title {
@@ -2662,7 +2650,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 @media (max-width: 1170px) {
   .tarif-lp-title {
-    margin-bottom: calc(10px + 10 * ((100vw - 320px) / 850));
+    margin-bottom: calc(25px + 15 * ((100vw - 320px) / 850));
   }
 }
 .tarif-lp-title span {
@@ -2673,7 +2661,7 @@ body._touch .menu__list > li._active .menu__arrow {
 .table__container {
   max-width: 1170px;
   margin: auto;
-  padding: 15px;
+  padding: 0px;
 }
 
 /* Стиили таблицы */
@@ -2689,15 +2677,16 @@ body._touch .menu__list > li._active .menu__arrow {
 .table th {
   text-align: left;
   background: #FBE191;
-  padding: 20px 30px;
+  padding: 30px;
   font-weight: 600;
   font-size: 18px;
   color: #000000;
 }
 @media (max-width: 479.98px) {
   .table th {
-    padding: 15px;
+    padding: 10px 10px 10px 20px;
     font-size: 16px;
+    line-height: 120%;
   }
 }
 
@@ -2712,9 +2701,12 @@ th.center {
 }
 @media (max-width: 479.98px) {
   .table td {
-    padding: 15px;
+    padding: 10px 10px 10px 20px;
     font-size: 14px;
   }
+}
+.table td img {
+  vertical-align: middle;
 }
 
 td.left {
@@ -2745,3 +2737,93 @@ td.left span {
 }
 
 /* конец таблицы */
+.order {
+  margin-bottom: 40px;
+}
+@media (max-width: 1170px) {
+  .order {
+    margin-bottom: calc(20px + 20 * ((100vw - 320px) / 850));
+  }
+}
+
+.order-lp-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media (max-width: 1170px) {
+  .order-lp-title {
+    margin-bottom: calc(25px + 15 * ((100vw - 320px) / 850));
+  }
+}
+
+.order__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide-swiper-lp {
+  flex: 0 0 310px;
+  padding: 23px;
+  background: #659BEA;
+  border-radius: 5px;
+  margin-bottom: 70px;
+  min-height: 327px;
+}
+@media (max-width: 1170px) {
+  .slide-swiper-lp {
+    margin-bottom: calc(20px + 50 * ((100vw - 320px) / 850));
+  }
+}
+.slide-swiper-lp:last-child {
+  margin-right: 0;
+}
+@media (max-width: 479.98px) {
+  .slide-swiper-lp {
+    margin-right: 0;
+  }
+}
+
+.order__step {
+  background: #FFFFFF;
+  border-radius: 3px;
+  padding: 5px 10px;
+  display: inline-flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+  font-family: "Montserrat";
+}
+
+.order__bg {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.order__item-title {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.order__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  text-align: center;
+}
+
+.item-order {
+  background: #FBE191;
+  border-radius: 5px;
+}
+.item-order .order__item-title,
+.item-order .order__text {
+  color: #000;
+}
