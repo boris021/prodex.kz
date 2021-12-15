@@ -396,7 +396,6 @@ body {
 	margin-top: 50px;
 	background: $yellowColor;
 
-	// @include adaptiv-value("padding-top", 76, 25, 1);
 	@media (max-width:$md3+px) {
 		padding-bottom: 50px;
 	}
@@ -478,10 +477,6 @@ body {
 		}
 	}
 }
-
-
-
-
 
 //<page__content>====================================================================================================
 
@@ -606,7 +601,6 @@ body {
 		padding: 5px 20px;
 		min-height: 177px;
 	}
-
 }
 
 .item__slide {
@@ -793,8 +787,6 @@ body {
 	}
 }
 
-.prise__container {}
-
 .prise-title {
 	font-weight: 600;
 	@include adaptiv-value("font-size", 30, 24, 1);
@@ -897,8 +889,6 @@ body {
 	@include adaptiv-value("padding-bottom", 50, 55, 1);
 }
 
-.about__body {}
-
 .about__title {
 	display: block;
 	margin: auto;
@@ -919,7 +909,6 @@ body {
 	margin: auto;
 	max-width: 478px;
 	@include adaptiv-value("margin-bottom", 50, 25, 1);
-
 }
 
 .about__block {
@@ -1295,7 +1284,6 @@ td.left {
 	@include adaptiv-value("margin-bottom", 70, 20, 1);
 }
 
-
 .portfolio-lp-title {
 	font-weight: 600;
 	@include adaptiv-value("font-size", 30, 24, 1);
@@ -1314,7 +1302,7 @@ td.left {
 
 	justify-content: center;
 	margin-right: 30px;
-	@include adaptiv-value("margin-bottom", 70, 20, 1);
+	// @include adaptiv-value("margin-bottom", 40, 20, 1);
 
 	&:last-child {
 		margin-right: 0;
@@ -1340,7 +1328,7 @@ td.left {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	background: linear-gradient(0deg, rgba(251, 224, 140, 0.5), rgba(251, 224, 140, 0.5));
+	background: rgba(0, 0, 0, 0.4);
 	width: 100%;
 	height: 100%;
 	transition: .5s ease;
@@ -1367,7 +1355,6 @@ td.left {
 	margin: 0 auto;
 	width: 100% !important;
 	@include adaptiv-value("margin-bottom", 40, 20, 1);
-
 }
 
 .myPrtSwiper .swiper-pagination-bullet {
@@ -1443,7 +1430,6 @@ td.left {
 	flex: 0 0 70%;
 	padding-right: 20px;
 
-
 	@media (max-width:$md2+px) {
 		flex: 1 1 100%;
 		padding-right: 0;
@@ -1511,6 +1497,10 @@ td.left {
 		height: 60px;
 		border-radius: 50%;
 		animation: pulse 2s infinite;
+
+		@media (max-width:$md4+px) {
+			display: none;
+		}
 	}
 
 	&::after {
@@ -1525,6 +1515,10 @@ td.left {
 		height: 120px;
 		border-radius: 50%;
 		animation: pulse 2s infinite;
+
+		@media (max-width:$md4+px) {
+			display: none;
+		}
 	}
 }
 
@@ -1535,8 +1529,6 @@ td.left {
 	display: block;
 }
 
-.product__form {}
-
 .form__item {
 	margin-bottom: 40px;
 
@@ -1544,8 +1536,6 @@ td.left {
 		margin-bottom: 0;
 	}
 }
-
-.form__item-btn {}
 
 textarea {
 	width: 100%;

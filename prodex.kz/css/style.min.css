@@ -2871,12 +2871,6 @@ td.left span {
   display: flex;
   justify-content: center;
   margin-right: 30px;
-  margin-bottom: 70px;
-}
-@media (max-width: 1170px) {
-  .slide-swiper-portfolio {
-    margin-bottom: calc(20px + 50 * ((100vw - 320px) / 850));
-  }
 }
 .slide-swiper-portfolio:last-child {
   margin-right: 0;
@@ -2899,7 +2893,7 @@ td.left span {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: linear-gradient(0deg, rgba(251, 224, 140, 0.5), rgba(251, 224, 140, 0.5));
+  background: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100%;
   transition: 0.5s ease;
@@ -3100,6 +3094,11 @@ td.left span {
   border-radius: 50%;
   animation: pulse 2s infinite;
 }
+@media (max-width: 479.98px) {
+  .product::before {
+    display: none;
+  }
+}
 .product::after {
   position: absolute;
   bottom: -40px;
@@ -3112,6 +3111,11 @@ td.left span {
   height: 120px;
   border-radius: 50%;
   animation: pulse 2s infinite;
+}
+@media (max-width: 479.98px) {
+  .product::after {
+    display: none;
+  }
 }
 
 .form-label {
