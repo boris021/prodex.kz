@@ -1405,7 +1405,7 @@ td.left {
 		border-radius: 50%;
 		animation: pulse 2s infinite;
 
-		@media (max-width:$md3+px) {
+		@media (max-width:$md2+px) {
 			display: none;
 		}
 	}
@@ -1424,7 +1424,7 @@ td.left {
 		animation: pulse 2s infinite;
 		z-index: 200;
 
-		@media (max-width:$md3+px) {
+		@media (max-width:$md2+px) {
 			display: none;
 		}
 	}
@@ -1434,7 +1434,7 @@ td.left {
 	flex: 0 0 30%;
 	z-index: 2;
 
-	@media (max-width:$md3+px) {
+	@media (max-width:$md2+px) {
 		display: none;
 	}
 }
@@ -1444,7 +1444,7 @@ td.left {
 	padding-right: 20px;
 
 
-	@media (max-width:$md3+px) {
+	@media (max-width:$md2+px) {
 		flex: 1 1 100%;
 		padding-right: 0;
 	}
@@ -1457,6 +1457,10 @@ td.left {
 
 	& span {
 		color: $lilacColor;
+	}
+
+	@media (max-width:$md4+px) {
+		margin-top: 30px;
 	}
 }
 
@@ -1472,10 +1476,21 @@ td.left {
 	}
 }
 
-.site__buttons a {
-	display: inline-flex;
-	margin-top: 20px;
-	margin-bottom: 25px;
+.site__buttons {
+	@media (max-width:$md4+px) {
+		text-align: center;
+		margin: 0;
+	}
+
+	a {
+		display: inline-flex;
+		margin-top: 20px;
+		margin-bottom: 25px;
+
+		@media (max-width:$md4+px) {
+			margin: 15px;
+		}
+	}
 }
 
 .product {
@@ -1483,6 +1498,34 @@ td.left {
 	padding: 30px;
 	position: relative;
 	z-index: 2;
+
+	&::before {
+		position: absolute;
+		bottom: -30px;
+		left: -30px;
+		content: '';
+		background: linear-gradient(240.31deg, #CDCDCD -24.65%, #FFFFFF 88.61%);
+		box-shadow: inset 0px 0px 7px rgba(127, 145, 190, 0.3);
+		transform: rotate(90deg);
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		animation: pulse 2s infinite;
+	}
+
+	&::after {
+		position: absolute;
+		bottom: -40px;
+		right: -40px;
+		content: '';
+		background: linear-gradient(240.31deg, #CDCDCD -24.65%, #FFFFFF 88.61%);
+		box-shadow: inset 0px 0px 7px rgba(127, 145, 190, 0.3);
+		transform: rotate(90deg);
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+		animation: pulse 2s infinite;
+	}
 }
 
 .form-label {
@@ -1494,9 +1537,15 @@ td.left {
 
 .product__form {}
 
-.form__item {}
+.form__item {
+	margin-bottom: 40px;
 
-.input {}
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.form__item-btn {}
 
 textarea {
 	width: 100%;
@@ -1507,4 +1556,74 @@ textarea {
 	font-size: 14px;
 	text-transform: uppercase;
 	color: #9E9E9E;
+}
+
+// кнопка=======================
+
+.form_radio_btn {
+	display: inline-block;
+	margin-right: 40px;
+	margin-bottom: 10px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.form_radio_btn input[type=radio] {
+	display: none;
+}
+
+.form_radio_btn label {
+	display: inline-block;
+	font-family: "Montserrat";
+	cursor: pointer;
+	padding: 11px 25px;
+	background: $whiteColor;
+	border-radius: 5px;
+	user-select: none;
+	font-weight: 500;
+	min-width: 170px;
+	text-align: center;
+	font-size: 14px;
+	color: #333333;
+	transition: all 0.3s ease 0s;
+}
+
+/* Checked */
+.form_radio_btn input[type=radio]:checked+label {
+	background: #FBE08C;
+}
+
+/* Hover */
+.form_radio_btn label:hover {
+	color: #666;
+}
+
+/* Disabled */
+.form_radio_btn input[type=radio]:disabled+label {
+	background: $whiteColor;
+}
+
+.input-product {
+	display: inline-flex;
+	background-color: $whiteColor;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #333333;
+	max-width: 260px !important;
+	margin-right: 80px;
+	margin-bottom: 10px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	@media (max-width:$md3+px) {
+		margin-right: 40px;
+	}
+
+	@media (max-width:$md4+px) {
+		margin-right: 10px;
+	}
 }
