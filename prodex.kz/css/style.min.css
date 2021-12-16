@@ -1680,8 +1680,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 @media (max-width: 479.98px) {
   .main__row::after {
-    right: 10px;
-    top: 158px;
+    display: none;
   }
 }
 
@@ -1730,6 +1729,11 @@ body._touch .menu__list > li._active .menu__arrow {
   width: 42px;
   height: 42px;
   animation: pulse 2s infinite;
+}
+@media (max-width: 479.98px) {
+  .main__row-body::before {
+    display: none;
+  }
 }
 
 .main__row-title {
@@ -3081,6 +3085,11 @@ td.left span {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 479.98px) and (max-width: 479.98px) {
+  .product {
+    margin-top: 20px;
+  }
+}
 .product::before {
   position: absolute;
   bottom: -30px;
@@ -3139,8 +3148,13 @@ textarea {
   padding: 20px;
   font-weight: 500;
   font-size: 14px;
-  text-transform: uppercase;
   color: #9E9E9E;
+}
+@media (max-width: 479.98px) {
+  textarea {
+    font-size: 12px;
+    padding: 10px;
+  }
 }
 
 .form_radio_btn {
@@ -3169,13 +3183,19 @@ textarea {
   border-radius: 5px;
   user-select: none;
   font-weight: 500;
-  min-width: 150px;
-  min-height: 40px;
-  line-height: 40px;
+  min-width: 130px;
+  min-height: 30px;
+  padding: 10px;
   text-align: center;
   font-size: 14px;
   color: #333333;
   transition: all 0.3s ease 0s;
+}
+@media (max-width: 479.98px) {
+  .form_radio_btn label {
+    font-size: 12px;
+    min-width: 100px;
+  }
 }
 
 /* Checked */
