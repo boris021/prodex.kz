@@ -993,6 +993,16 @@ body.ie ._ibg img {
 }
 .header__logo {
   z-index: 2;
+  position: relative;
+}
+.header__logo::after {
+  position: absolute;
+  content: "";
+  top: -13px;
+  left: -26px;
+  background: url(../img/shapka-santy.png) no-repeat;
+  width: 45px;
+  height: 100%;
 }
 
 .menu__list > li {
@@ -1682,6 +1692,10 @@ body._touch .menu__list > li._active .menu__arrow {
   .main__row::after {
     display: none;
   }
+}
+
+.santa {
+  position: relative;
 }
 
 .main__row-body {
@@ -2993,7 +3007,7 @@ td.left span {
   height: 119px;
   border-radius: 50%;
   animation: pulse 2s infinite;
-  z-index: 200;
+  z-index: 3;
 }
 @media (max-width: 991.98px) {
   .site__body::after {

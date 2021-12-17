@@ -28,6 +28,17 @@
 
 .header__logo {
 	z-index: 2;
+	position: relative;
+
+	&::after {
+		position: absolute;
+		content: '';
+		top: -13px;
+		left: -26px;
+		background: url(../img/shapka-santy.png) no-repeat;
+		width: 45px;
+		height: 100%;
+	}
 }
 
 .menu__list>li {

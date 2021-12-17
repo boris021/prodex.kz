@@ -334,6 +334,10 @@ body {
 	}
 }
 
+.santa {
+	position: relative;
+}
+
 .main__row-body {
 	display: block;
 	margin: 0 auto;
@@ -1412,7 +1416,7 @@ td.left {
 		height: 119px;
 		border-radius: 50%;
 		animation: pulse 2s infinite;
-		z-index: 200;
+		z-index: 3;
 
 		@media (max-width:$md2+px) {
 			display: none;
