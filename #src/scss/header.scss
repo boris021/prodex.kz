@@ -38,6 +38,10 @@
 		background: url(../img/shapka-santy.png) no-repeat;
 		width: 45px;
 		height: 100%;
+
+		@media (max-width:$md4+px) {
+			top: -7px;
+		}
 	}
 }
 
