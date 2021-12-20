@@ -444,7 +444,8 @@
 	</div>
 </footer>
 	</div>
-	<div class="popup popup_policy">
+	<!--политика конфиденциальности -->
+<div class="popup popup_policy">
 	<div class="popup__content">
 		<div class="popup__body popup__body-policy">
 			<div class="popup__close">X</div>
@@ -540,15 +541,16 @@
 	</div>
 </div>
 
+<!--Обратный звонок, шапка, футер -->
 <div class="popup popup_callback">
 	<div class="popup__content">
 		<div class="popup__body">
 			<div class="popup__close">X</div>
 			<div class="popup__title">Заказать <span>обратный</span> звонок </div>
 			<div class="popup__forma">
-				<form data-message="send" data-test action="#" class="form">
+				<form data-message="send" data-ajax="true" action="sendmail.php" method="POST" class="form">
 					<div class="form__line">
-						<input type="hidden" name="hidden" value="Оставить заявку"></p>
+						<input type="hidden" name="hidden" value="Обратный звонок, шапка, футер"></p>
 						<label for="inp" class="form__label">Введите ваше имя*</label>
 						<input id="inp" autocomplete="on" name="name" type="name" name="form[]"
 							data-error="Вы не заполнили поле имя" data-value="" placeholder="Ваше имя" class="input _req">
@@ -574,6 +576,7 @@
 	</div>
 </div>
 
+<!-- LP конструктор -->
 <div class="popup popup_lp-el">
 	<div class="popup__content">
 		<div class="popup__body">
@@ -608,6 +611,7 @@
 	</div>
 </div>
 
+<!-- LP верстка -->
 <div class="popup popup_lp-front">
 	<div class="popup__content">
 		<div class="popup__body">
@@ -642,6 +646,7 @@
 	</div>
 </div>
 
+<!-- Кнопка под ценами "Оставить заявку" -->
 <div class="popup popup_bid">
 	<div class="popup__content">
 		<div class="popup__body">
@@ -676,6 +681,7 @@
 	</div>
 </div>
 
+<!-- Спасибо -->
 <div class="popup popup_send-message">
 	<div class="popup__content">
 		<div class="popup__body">

@@ -3488,7 +3488,7 @@ textarea {
 }
 @media (max-width: 479.98px) {
   .project-tabs__item {
-    margin-right: 0;
+    margin: 0 10px 20px 0;
   }
 }
 .project-tabs__item:hover {
