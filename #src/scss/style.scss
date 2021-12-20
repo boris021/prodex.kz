@@ -1644,3 +1644,139 @@ textarea {
 		margin-right: 10px;
 	}
 }
+
+// contact========================================================================================================================================================
+.contact__block {
+	@include adaptiv-value("margin-top", 40, 20, 1);
+	@include adaptiv-value("margin-bottom", 70, 40, 1);
+}
+
+.contact__block__container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.contact__block-content {
+	flex: 1 1 50%;
+	margin-right: 30px;
+
+	@media (max-width:$md2+px) {
+		flex: 1 1 100%;
+	}
+}
+
+.contact__block-title {
+	font-weight: 600;
+	@include adaptiv-value("font-size", 30, 20, 1);
+	line-height: 120%;
+	color: #1C1C1C;
+	@include adaptiv-value("margin-bottom", 10, 20, 1);
+}
+
+.contact__block-text {
+	font-weight: normal;
+	@include adaptiv-value("font-size", 18, 15, 1);
+	@include adaptiv-value("margin-bottom", 35, 20, 1);
+	line-height: 130%;
+	color: #1C1C1C;
+}
+
+.contact__block-item {}
+
+.contact__block-icon {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.contact__block-list {
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 15px rgba(15, 84, 185, 0.15);
+	border-radius: 5px;
+	transition: all 0.3s ease 0s;
+	margin-right: 16px;
+
+	&:hover {
+		box-shadow: 0px 0px 15px rgba(15, 84, 185, 0.35);
+	}
+
+	& span {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		font-size: 26px;
+		color: $blueColor;
+		transition: color 0.3s ease 0s;
+
+		&:hover {
+			color: $blueHoverColor;
+		}
+	}
+}
+
+.contact__block-phone {
+	display: flex;
+	flex-direction: column;
+	@include adaptiv-value("font-size", 16, 15, 1);
+
+	& a {
+		font-family: 'Montserrat';
+		text-decoration: underline;
+		@include adaptiv-value("margin-top", 7, 5, 1);
+		font-weight: 500;
+		font-size: 18px;
+		color: $blackColor;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			color: $grayColor;
+		}
+	}
+}
+
+.contact__block-form {
+	flex: 0 0 45%;
+
+	@media (max-width:$md2+px) {
+		flex: 1 1 100%;
+	}
+}
+
+.block-form {
+	background: #FFFFFF;
+	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	@include adaptiv-value("padding", 40, 20, 1);
+}
+
+.block-form-title {
+	font-weight: 600;
+	@include adaptiv-value("font-size", 26, 18, 1);
+	color: #1C1C1C;
+	@include adaptiv-value("margin-bottom", 34, 26, 1);
+
+}
+
+.block-form-label {
+	font-weight: 500;
+	@include adaptiv-value("font-size", 18, 14, 1);
+}
+
+.block-form-input {
+	margin: 10px 0 20px 0;
+}
+
+.block-form__button {
+	margin-top: 20px;
+}
+
+.checkbox__label {
+	& span {
+		flex: 1 1 auto;
+		font-size: 12px;
+	}
+}
