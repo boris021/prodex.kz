@@ -3495,3 +3495,10 @@ textarea {
 .project-tabs-slide:hover .portfolio__block-btn {
   opacity: 1;
 }
+
+.reklama-title {
+  line-height: 130%;
+}
+.reklama-title span {
+  display: block;
+}
