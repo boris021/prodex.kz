@@ -1501,7 +1501,7 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .main__item-bg {
   position: relative;
-  background: linear-gradient(78.38deg, #7F91BE 0%, rgba(201, 208, 225, 0.87) 54.73%, #0F54B9 101.03%, #7F91BE 101.04%);
+  background: linear-gradient(78.38deg, #0088CC 0%, rgba(0, 136, 204, 0.47) 54.73%, #0F54B9 101.03%, #0088CC 101.04%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   flex: 0 0 160px;
@@ -1514,70 +1514,18 @@ body._touch .menu__list > li._active .menu__arrow {
   }
 }
 
-.main__item-list-1 {
-  position: relative;
-}
-.main__item-list-1::before {
-  content: "";
+.item-bg-1 {
   position: absolute;
-  top: -32px;
-  bottom: 0px;
-  left: 30px;
-  background: url(../img/main/icon-1.png) no-repeat;
-  width: 250px;
-  height: 150px;
-  z-index: 2;
-}
-@media (max-width: 991.98px) {
-  .main__item-list-1::before {
-    left: 0;
-  }
-}
-@media (max-width: 767.98px) {
-  .main__item-list-1::before {
-    width: 90px;
-    height: 120px;
-    top: -28px;
-  }
-}
-
-.main__item-list-2 {
-  position: relative;
-}
-.main__item-list-2::before {
   content: "";
-  position: absolute;
-  top: -27px;
-  bottom: 0px;
-  left: 10px;
-  background: url(../img/main/icon-2.png) no-repeat;
-  width: 100%;
-  z-index: 2;
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 170px;
 }
-@media (max-width: 767.98px) {
-  .main__item-list-2::before {
-    width: 100px;
-    left: -15px;
-  }
-}
-
-.main__item-list-3 {
-  position: relative;
-}
-.main__item-list-3::before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  bottom: 0px;
-  left: 20px;
-  background: url(../img/main/icon-3.png) no-repeat;
-  width: 100%;
-  z-index: 2;
-}
-@media (max-width: 767.98px) {
-  .main__item-list-3::before {
-    width: 100px;
-    left: -13px;
+@media (max-width: 479.98px) {
+  .item-bg-1 {
+    top: -40px;
+    width: 150px;
   }
 }
 
@@ -3490,12 +3438,9 @@ textarea {
 }
 @media (max-width: 479.98px) {
   .project-tabs__item {
-<<<<<<< HEAD
     margin: 0 10px 20px 0;
-=======
     flex: 1 1 100%;
     margin-right: 0;
->>>>>>> d605e4820619ace1aa12ec48428eb1a5155d7bff
   }
 }
 .project-tabs__item:hover {
