@@ -2228,6 +2228,7 @@ body._touch .menu__list > li._active .menu__arrow {
 .prise__img {
   text-align: center;
   margin-bottom: 17px;
+  height: 130px;
 }
 
 .prise__subtitle {
@@ -2758,12 +2759,12 @@ td.left span {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  margin-bottom: 20px;
   font-family: "Montserrat";
 }
 
 .order__bg {
   text-align: center;
+  height: 170px;
   margin-bottom: 20px;
 }
 
