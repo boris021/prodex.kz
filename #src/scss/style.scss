@@ -142,7 +142,7 @@ body {
 .main__item-list {
 	display: flex;
 	align-items: center;
-	@include adaptiv-value("margin-bottom", 53, 40, 1);
+	@include adaptiv-value("margin-bottom", 70, 40, 1);
 }
 
 .main__item-bg {
@@ -155,7 +155,7 @@ body {
 	margin: 0px 20px 0px 0px;
 
 	@media (max-width:$md3+px) {
-		flex: 0 0 90px;
+		flex: 0 0 120px;
 	}
 }
 
@@ -557,7 +557,7 @@ body {
 	&-home {
 		background: #F2F2F2;
 		border-radius: 10px;
-		padding: 5px 20px;
+		padding: 5px 15px;
 		min-height: 177px;
 	}
 }
@@ -568,8 +568,12 @@ body {
 }
 
 .item__slide-content {
-	flex: 0 0 58%;
-	margin-right: 10px;
+	flex: 0 0 55%;
+	align-items: center;
+
+	@media (max-width:$md4+px) {
+		flex: 1 1 100%;
+	}
 }
 
 .item__slide-title {
@@ -584,26 +588,15 @@ body {
 	line-height: 18px;
 }
 
-.item__slide-photo-1 {
-	flex: 0 0 40%;
-	transform: translate(-23px, 0px);
-}
-
-.item__slide-photo-2 {
-	transform: translate(-20px, 0px);
-}
-
-.item__slide-photo-3 {
-	transform: translate(-35px, 0px);
-}
-
-.item__slide-photo img {
-	background-size: cover;
-	max-width: 162px;
-	max-height: 168px;
+.item__slide-photo {
+	flex: 1 1 170px;
 }
 
 // слайд===============================
+.swiper-slide-home {
+	display: flex;
+	align-items: center;
+}
 
 .swiper-wrapper {
 	margin: 0px 0px 20px 0px;
