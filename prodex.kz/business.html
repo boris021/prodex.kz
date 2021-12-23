@@ -40,7 +40,7 @@
 					<li><a href="contacts.html" class="menu__link">Наши контакты</a></li>
 				</ul>
 				<div class="social__mob">
-					<a href="https://api.whatsapp.com/send?phone=+77054262020" target="_blank"
+					<a href="https://api.whatsapp.com/send?phone=+77056766766" target="_blank"
 						class="social__list _icon-whatsapp"></a>
 					<a href="https://t.me/Webprofykz" target="_blank" class="social__list _icon-telegram"></a>
 					<!-- <a href="#" class="social__list _icon-instagram"></a> -->
@@ -482,7 +482,7 @@
 	</div>
 </footer>
 	</div>
-	<!--политика конфиденциальности -->
+	<!-- Политика конфиденциальности -->
 <div class="popup popup_policy">
 	<div class="popup__content">
 		<div class="popup__body popup__body-policy">
@@ -586,9 +586,111 @@
 			<div class="popup__close">X</div>
 			<div class="popup__title">Заказать <span>обратный</span> звонок </div>
 			<div class="popup__forma">
-				<form data-message="send" data-ajax="true" action="sendmail.php" method="POST" class="form">
+				<form data-message="send" data-ajax="true" action="telegram.php" method="POST" class="form">
 					<div class="form__line">
-						<input type="hidden" name="hidden" value="Обратный звонок, шапка, футер"></p>
+						<input type="hidden" name="hidden" value="Обратный звонок"></p>
+						<label for="inp" class="form__label">Введите ваше имя*</label>
+						<input id="inp" autocomplete="on" name="name" type="name" name="form[]"
+							data-error="Вы не заполнили поле имя" data-value="Ваше имя" class="input _req">
+					</div>
+					<div class="form__line">
+						<label for="inp2" class="form__label">Введите ваш телефон*</label>
+						<input id="inp2" autocomplete="on" name="tel" type="tel" name="form[]"
+							data-error="Вы не заполнили поле телефон" data-value="+7 700 000 0000" class="input _phone _req">
+					</div>
+					<button type="submit" class="button btn-blue form__button">Отправить заявку</button>
+					<div class="checkbox">
+						<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req"
+							data-error="Вы не поставили галочку!">
+						<label for="formAgreement" class="checkbox__label"><span>Вы соглашаетесь с <a href="#policy"
+									class="_popup-link">политикой конфиденциальности</a></span></label>
+					</div>
+				</form>
+			</div>
+			<div class="popup_circle-top"><img src="img/circle-popup.svg" alt="circle"></div>
+			<div class="popup_circle-bottom"><img src="img/circle-popup-bottum.svg" alt="circle"></div>
+		</div>
+	</div>
+</div>
+
+<!-- Бриф на главной странице -->
+<div class="popup popup_brief">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close">X</div>
+			<div class="popup__title">Заполните <span>короткий </span> бриф</div>
+			<div class="popup__forma">
+				<form data-message="send" data-ajax="true" action="telegram.php" method="POST" class="form">
+					<div class="form__line">
+						<input type="hidden" name="hidden" value="Заполните короткий бриф"></p>
+						<label for="inp" class="form__label">Введите ваше имя*</label>
+						<input id="inp" autocomplete="on" name="name" type="name" name="form[]"
+							data-error="Вы не заполнили поле имя" data-value="Ваше имя" class="input _req">
+					</div>
+					<div class="form__line">
+						<label for="inp2" class="form__label">Введите ваш телефон*</label>
+						<input id="inp2" autocomplete="on" name="tel" type="tel" name="form[]"
+							data-error="Вы не заполнили поле телефон" data-value="+7 700 000 0000" class="input _phone _req">
+					</div>
+					<button type="submit" class="button btn-blue form__button">Отправить заявку</button>
+					<div class="checkbox">
+						<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req"
+							data-error="Вы не поставили галочку!">
+						<label for="formAgreement" class="checkbox__label"><span>Вы соглашаетесь с <a href="#policy"
+									class="_popup-link">политикой конфиденциальности</a></span></label>
+					</div>
+				</form>
+			</div>
+			<div class="popup_circle-top"><img src="img/circle-popup.svg" alt="circle"></div>
+			<div class="popup_circle-bottom"><img src="img/circle-popup-bottum.svg" alt="circle"></div>
+		</div>
+	</div>
+</div>
+
+<!-- Подскажем оптимальный вариант -->
+<div class="popup popup_optimal">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close">X</div>
+			<div class="popup__title">Свяжитесь с нами и <span>мы </span> проконсультируем вас</div>
+			<div class="popup__forma">
+				<form data-message="send" data-ajax="true" action="telegram.php" method="POST" class="form">
+					<div class="form__line">
+						<input type="hidden" name="hidden" value="Главная - Свяжитесь с нами и мы проконсультируем вас"></p>
+						<label for="inp" class="form__label">Введите ваше имя*</label>
+						<input id="inp" autocomplete="on" name="name" type="name" name="form[]"
+							data-error="Вы не заполнили поле имя" data-value="Ваше имя" class="input _req">
+					</div>
+					<div class="form__line">
+						<label for="inp2" class="form__label">Введите ваш телефон*</label>
+						<input id="inp2" autocomplete="on" name="tel" type="tel" name="form[]"
+							data-error="Вы не заполнили поле телефон" data-value="+7 700 000 0000" class="input _phone _req">
+					</div>
+					<button type="submit" class="button btn-blue form__button">Отправить заявку</button>
+					<div class="checkbox">
+						<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req"
+							data-error="Вы не поставили галочку!">
+						<label for="formAgreement" class="checkbox__label"><span>Вы соглашаетесь с <a href="#policy"
+									class="_popup-link">политикой конфиденциальности</a></span></label>
+					</div>
+				</form>
+			</div>
+			<div class="popup_circle-top"><img src="img/circle-popup.svg" alt="circle"></div>
+			<div class="popup_circle-bottom"><img src="img/circle-popup-bottum.svg" alt="circle"></div>
+		</div>
+	</div>
+</div>
+
+<!-- LP А ещё, наши цены почти на 20% ниже среднерыночных -->
+<div class="popup popup_lp-prise">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close">X</div>
+			<div class="popup__title">Рассчитать <span>стоимость</span> бесплатно</div>
+			<div class="popup__forma">
+				<form data-message="send" data-ajax="true" action="telegram.php" method="POST" class="form">
+					<div class="form__line">
+						<input type="hidden" name="hidden" value="Landing Page - Рассчитать стоимость бесплатно"></p>
 						<label for="inp" class="form__label">Введите ваше имя*</label>
 						<input id="inp" autocomplete="on" name="name" type="name" name="form[]"
 							data-error="Вы не заполнили поле имя" data-value="" placeholder="Ваше имя" class="input _req">
@@ -614,16 +716,16 @@
 	</div>
 </div>
 
-<!-- LP конструктор -->
-<div class="popup popup_lp-el">
+<!-- LP Базовое решение -->
+<div class="popup popup_lp-base">
 	<div class="popup__content">
 		<div class="popup__body">
 			<div class="popup__close">X</div>
-			<div class="popup__title">Заказать <span>разработку</span> Landing Page </div>
+			<div class="popup__title">Рассчитать <span>стоимость</span> бесплатно</div>
 			<div class="popup__forma">
-				<form data-message="send" data-test action="#" class="form">
+				<form data-message="send" data-ajax="true" action="telegram.php" method="POST" class="form">
 					<div class="form__line">
-						<input type="hidden" name="hidden" value="Landing Page - Конструктор"></p>
+						<input type="hidden" name="hidden" value="Landing Page - Базовое решение"></p>
 						<label for="inp" class="form__label">Введите ваше имя*</label>
 						<input id="inp" autocomplete="on" name="name" type="name" name="form[]"
 							data-error="Вы не заполнили поле имя" data-value="" placeholder="Ваше имя" class="input _req">
@@ -649,14 +751,14 @@
 	</div>
 </div>
 
-<!-- LP верстка -->
-<div class="popup popup_lp-front">
+<!-- LP Верстка -->
+<div class="popup popup_lp-vr">
 	<div class="popup__content">
 		<div class="popup__body">
 			<div class="popup__close">X</div>
-			<div class="popup__title">Заказать <span>разработку</span> Landing Page </div>
+			<div class="popup__title">Рассчитать <span>стоимость</span> бесплатно</div>
 			<div class="popup__forma">
-				<form data-message="send" data-test action="#" class="form">
+				<form data-message="send" data-ajax="true" action="telegram.php" method="POST" class="form">
 					<div class="form__line">
 						<input type="hidden" name="hidden" value="Landing Page - Верстка"></p>
 						<label for="inp" class="form__label">Введите ваше имя*</label>
@@ -684,40 +786,8 @@
 	</div>
 </div>
 
-<!-- Кнопка под ценами "Оставить заявку" -->
-<div class="popup popup_bid">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close">X</div>
-			<div class="popup__title">Оставьте <span>заявку</span> прямо сейчас </div>
-			<div class="popup__forma">
-				<form data-message="send" data-test action="#" class="form">
-					<div class="form__line">
-						<input type="hidden" name="hidden" value="Оставить заявку"></p>
-						<label for="inp" class="form__label">Введите ваше имя*</label>
-						<input id="inp" autocomplete="on" name="name" type="name" name="form[]"
-							data-error="Вы не заполнили поле имя" data-value="" placeholder="Ваше имя" class="input _req">
-					</div>
-					<div class="form__line">
-						<label for="inp2" class="form__label">Введите ваш телефон*</label>
-						<input id="inp2" autocomplete="on" name="tel" type="tel" name="form[]"
-							data-error="Вы не заполнили поле телефон" data-value="" placeholder="+7 700 000 0000"
-							class="input _phone _req">
-					</div>
-					<button type="submit" class="button btn-blue form__button">Отправить заявку</button>
-					<div class="checkbox">
-						<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req"
-							data-error="Вы не поставили галочку!">
-						<label for="formAgreement" class="checkbox__label"><span>Вы соглашаетесь с <a href="#policy"
-									class="_popup-link">политикой конфиденциальности</a></span></label>
-					</div>
-				</form>
-			</div>
-			<div class="popup_circle-top"><img src="img/circle-popup.svg" alt="circle"></div>
-			<div class="popup_circle-bottom"><img src="img/circle-popup-bottum.svg" alt="circle"></div>
-		</div>
-	</div>
-</div>
+
+
 
 <!-- Спасибо -->
 <div class="popup popup_send-message">
@@ -733,9 +803,9 @@
 				<button class="btn-social btn-social_telegram"> <a href="https://t.me/Webprofykz">
 						Telegram</a>
 				</button>
-				<button class="btn-social btn-social_instagram"> <a href="#">
+				<!--<button class="btn-social btn-social_instagram"> <a href="#">
 						Instagram</a>
-				</button>
+			 </button> -->
 			</div>
 			<div class="popup__send-text">или позвонить по номеру</div>
 			<a href="tel:+77056766766" class="popup__send-text-link">+7 705 676 67 66</a>

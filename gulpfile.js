@@ -1,5 +1,8 @@
 //let replace = require('gulp-replace'); //.pipe(replace('bar', 'foo'))
-let { src, dest } = require("gulp");
+let {
+	src,
+	dest
+} = require("gulp");
 let fs = require('fs');
 let gulp = require("gulp");
 let browsersync = require("browser-sync").create();
@@ -67,6 +70,7 @@ function copyFolders() {
 	});
 	return src(path.src.html).pipe(browsersync.stream());
 }
+
 function browserSync(done) {
 	browsersync.init({
 		server: {
@@ -76,6 +80,7 @@ function browserSync(done) {
 		port: 3000,
 	});
 }
+
 function html() {
 	return src(path.src.html, {})
 		.pipe(fileinclude())
@@ -85,10 +90,13 @@ function html() {
 		.pipe(dest(path.build.html))
 		.pipe(browsersync.stream());
 }
+
 function css() {
 	return src(path.src.css, {})
 		.pipe(
-			scss({ outputStyle: 'expanded' }).on('error', scss.logError)
+			scss({
+				outputStyle: 'expanded'
+			}).on('error', scss.logError)
 		)
 		.pipe(
 			rename({
@@ -98,11 +106,13 @@ function css() {
 		.pipe(dest(path.build.css))
 		.pipe(browsersync.stream());
 }
+
 function json() {
 	return src(path.src.json, {})
 		.pipe(dest(path.build.json))
 		.pipe(browsersync.stream());
 }
+
 function js() {
 	return src(path.src.js, {})
 		.pipe(fileinclude())
@@ -118,11 +128,13 @@ function js() {
 		.pipe(dest(path.build.js))
 		.pipe(browsersync.stream());
 }
+
 function images() {
 	return src(path.src.images)
 		.pipe(newer(path.build.images))
 		.pipe(dest(path.build.images))
 }
+
 function favicon() {
 	return src(path.src.favicon)
 		.pipe(plumber())
@@ -133,6 +145,7 @@ function favicon() {
 		)
 		.pipe(dest(path.build.html))
 }
+
 function fonts_otf() {
 	return src('./' + src_folder + '/fonts/*.otf')
 		.pipe(plumber())
@@ -141,6 +154,7 @@ function fonts_otf() {
 		}))
 		.pipe(gulp.dest('./' + src_folder + '/fonts/'));
 }
+
 function fonts() {
 	src(path.src.fonts)
 		.pipe(plumber())
@@ -151,6 +165,7 @@ function fonts() {
 		.pipe(dest(path.build.fonts))
 		.pipe(browsersync.stream());
 }
+
 function fontstyle() {
 	let file_content = fs.readFileSync(src_folder + '/scss/fonts.scss');
 	if (file_content == '') {
@@ -171,14 +186,17 @@ function fontstyle() {
 	}
 	return src(path.src.html).pipe(browsersync.stream());
 }
+
 function infofile() {
 
 }
-function cb() { }
+
+function cb() {}
 
 function clean() {
 	return del(path.clean);
 }
+
 function watchFiles() {
 	gulp.watch([path.watch.html], html);
 	gulp.watch([path.watch.css], css);
@@ -186,11 +204,14 @@ function watchFiles() {
 	gulp.watch([path.watch.json], json);
 	gulp.watch([path.watch.images], images);
 }
+
 function cssBuild() {
 	return src(path.src.css, {})
 		.pipe(plumber())
 		.pipe(
-			scss({ outputStyle: 'expanded' }).on('error', scss.logError)
+			scss({
+				outputStyle: 'expanded'
+			}).on('error', scss.logError)
 		)
 		.pipe(group_media())
 		.pipe(
@@ -200,12 +221,10 @@ function cssBuild() {
 				cascade: true
 			})
 		)
-		.pipe(webpcss(
-			{
-				webpClass: "._webp",
-				noWebpClass: "._no-webp"
-			}
-		))
+		.pipe(webpcss({
+			webpClass: "._webp",
+			noWebpClass: "._no-webp"
+		}))
 		.pipe(dest(path.build.css))
 		.pipe(clean_css())
 		.pipe(
@@ -216,6 +235,7 @@ function cssBuild() {
 		.pipe(dest(path.build.css))
 		.pipe(browsersync.stream());
 }
+
 function jsBuild() {
 	let appPath = path.build.js + 'app.min.js';
 	let vendorsPath = path.build.js + 'vendors.min.js';
@@ -225,8 +245,11 @@ function jsBuild() {
 		.pipe(plumber())
 		.pipe(fileinclude())
 		.pipe(gulp.dest(path.build.js))
-		.pipe(uglify(/* options */))
-		.on('error', function (err) { console.log(err.toString()); this.emit('end'); })
+		.pipe(uglify( /* options */ ))
+		.on('error', function (err) {
+			console.log(err.toString());
+			this.emit('end');
+		})
 		.pipe(
 			rename({
 				suffix: ".min",
@@ -236,6 +259,7 @@ function jsBuild() {
 		.pipe(dest(path.build.js))
 		.pipe(browsersync.stream());
 }
+
 function imagesBuild() {
 	return src(path.src.images)
 		//.pipe(newer(path.build.images))
@@ -257,13 +281,16 @@ function imagesBuild() {
 		.pipe(
 			imagemin({
 				progressive: true,
-				svgoPlugins: [{ removeViewBox: false }],
+				svgoPlugins: [{
+					removeViewBox: false
+				}],
 				interlaced: true,
 				optimizationLevel: 3 // 0 to 7
 			})
 		)
 		.pipe(dest(path.build.images))
 }
+
 function htmlBuild() {
 	return src(path.src.html, {})
 		.pipe(plumber())
