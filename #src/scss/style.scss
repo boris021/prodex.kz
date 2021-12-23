@@ -688,7 +688,6 @@ body {
 	line-height: 35px;
 	text-align: center;
 	color: $whiteColor;
-	@include adaptiv-value("margin-bottom", 44, 25, 1);
 }
 
 .servise__body {
@@ -969,7 +968,7 @@ body {
 
 .landing {
 	@include adaptiv-value("padding-top", 135, 95, 1);
-	@include adaptiv-value("padding-bottom", 70, 5, 1);
+	@include adaptiv-value("padding-bottom", 40, 5, 1);
 }
 
 .landing-title {
@@ -991,6 +990,15 @@ body {
 	text-align: center;
 	@include adaptiv-value("margin-bottom", 40, 0, 1);
 	color: #1C1C1C;
+}
+
+.servise-subtitle {
+	font-weight: 500;
+	@include adaptiv-value("font-size", 20, 15, 1);
+	line-height: 130%;
+	text-align: center;
+	color: $whiteColor;
+	@include adaptiv-value("margin-bottom", 34, 25, 1);
 }
 
 .main__row-title-landing {
