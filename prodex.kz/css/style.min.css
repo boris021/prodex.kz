@@ -3059,7 +3059,7 @@ td.left span {
 
 .product {
   background: #F2F2F2;
-  padding: 30px;
+  padding: 30px 30px 50px 30px;
   position: relative;
   z-index: 2;
 }

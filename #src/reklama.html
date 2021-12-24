@@ -22,7 +22,8 @@
 									среднерыночных</span></div>
 								<div class="main__row-subtitle">Узнайте стоимость и убедитесь в этом сами, ведь Вы ничего не
 									теряете.</div>
-								<a href="#" class="main__row-button button btn-blue _blick main__row-button-lp">Рассчитать
+								<a href="#kt-prise"
+									class="main__row-button button btn-blue _blick main__row-button-lp _popup-link">Рассчитать
 									стоимость бесплатно </a>
 							</div>
 						</div>
@@ -149,7 +150,7 @@
 										</tr>
 										<tr>
 											<td></td>
-											<td><a href="#lp-el" class="button btn-blue _popup-link">Заказать</a></td>
+											<td><a href="#kt-base" class="button btn-blue _popup-link">Заказать</a></td>
 										</tr>
 									</tbody>
 								</table>
@@ -230,16 +231,20 @@
 								Или позвоните нам, мы зададим все необходимые вопросы по телефону <a href="tel:+77056766766">+7
 									705 676 67 66</a> или напишите нам в соц сети </div>
 							<div class="site__buttons">
-								<a href="#" class="btn-social btn-social_whatsapp">WhatsApp</a>
-								<a href="#" class="btn-social btn-social_telegram">Telegram</a>
-								<a href="#" class="btn-social btn-social_instagram">Instagram</a>
+								<a href="https://api.whatsapp.com/send?phone=+77056766766" target="_blank"
+									class="btn-social btn-social_whatsapp">WhatsApp</a>
+								<a href="https://t.me/Webprofykz" target="_blank"
+									class="btn-social btn-social_telegram">Telegram</a>
+								<!-- <a href="#" class="btn-social btn-social_instagram">Instagram</a> -->
 							</div>
 						</div>
 					</div>
 					<div class="product">
 						<div class="product__form">
-							<form data-message="send" data-test action="#" class="form">
+							<form data-message="send" data-ajax="true" action="telegram-site.php" method="POST" class="form">
 								<div class="form__item">
+									<input type="hidden" name="hidden" value="Контекстная реклама - Вам нужен эффективный сайт?">
+									</p>
 									<label for="text" class="form-label">Расскажите о продукте</label>
 									<textarea name="textarea" id="textarea" cols="" rows="6"
 										placeholder="Описание проекта"></textarea>
@@ -247,38 +252,38 @@
 								<div class="form__item form__item-btn">
 									<label for="text" class="form-label">Ваш бюджет:</label>
 									<div class="form_radio_btn">
-										<input id="radio-1" type="radio" name="radio" value="1">
+										<input id="radio-1" type="radio" name="radio" value="45 000">
 										<label for="radio-1">от 45 000 тг</label>
 									</div>
 									<div class="form_radio_btn">
-										<input id="radio-2" type="radio" name="radio" value="1" checked>
+										<input id="radio-2" type="radio" name="radio" value="65 000" checked>
 										<label for="radio-2">от 65 000 тг</label>
 									</div>
 									<div class="form_radio_btn">
-										<input id="radio-3" type="radio" name="radio" value="1">
+										<input id="radio-3" type="radio" name="radio" value="85 000">
 										<label for="radio-3">от 85 000 тг</label>
 									</div>
 									<div class="form_radio_btn">
-										<input id="radio-4" type="radio" name="radio" value="1">
+										<input id="radio-4" type="radio" name="radio" value="100 000">
 										<label for="radio-4">от 100 000 тг</label>
 									</div>
 								</div>
 								<div class="form__item form__item-btn">
 									<label for="text" class="form-label">Откуда вы о нас узнали?</label>
 									<div class="form_radio_btn">
-										<input id="radio-5" type="radio" name="radio-about" value="1" checked>
+										<input id="radio-5" type="radio" name="radio_about" value="Рейтинги" checked>
 										<label for="radio-5">Рейтинги</label>
 									</div>
 									<div class="form_radio_btn">
-										<input id="radio-6" type="radio" name="radio-about" value="1">
+										<input id="radio-6" type="radio" name="radio_about" value="Соц. сети">
 										<label for="radio-6">Соц. сети</label>
 									</div>
 									<div class="form_radio_btn">
-										<input id="radio-7" type="radio" name="radio-about" value="1">
+										<input id="radio-7" type="radio" name="radio_about" value="Рекомендации">
 										<label for="radio-7">Рекомендации</label>
 									</div>
 									<div class="form_radio_btn">
-										<input id="radio-8" type="radio" name="radio-about" value="1">
+										<input id="radio-8" type="radio" name="radio_about" value="СМИ">
 										<label for="radio-8">СМИ</label>
 									</div>
 								</div>
@@ -291,18 +296,12 @@
 										<input id="inp2" autocomplete="on" name="tel" type="tel" name="form[]"
 											data-error="Вы не заполнили поле телефон" data-value="Телефон*"
 											class="input input-product _phone _req">
-										<input id="inp2" autocomplete="on" name="email" type="email" name="form[]"
+										<!-- <input id="inp3" autocomplete="on" name="email" type="email" name="form[]"
 											data-error="Вы не заполнили поле Email" data-value="E-mail"
-											class="input input-product _email">
+											class="input input-product _email"> -->
 									</div>
 								</div>
 								<button type="submit" class="button btn-blue">Отправить заявку</button>
-								<div class="checkbox">
-									<input id="formAgreement" checked type="checkbox" name="agreement"
-										class="checkbox__input _req" data-error="Вы не поставили галочку!">
-									<label for="formAgreement" class="checkbox__label"><span>Вы соглашаетесь с <a href="#policy"
-												class="_popup-link">политикой конфиденциальности</a></span></label>
-								</div>
 							</form>
 						</div>
 					</div>

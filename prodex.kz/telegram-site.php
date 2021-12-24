@@ -4,6 +4,9 @@
 где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
 
 $hidden = $_POST['hidden'];
+$textarea = $_POST['textarea'];
+$radio = $_POST['radio'];
+$radio_about = $_POST['radio_about'];
 $name = $_POST['name'];
 $tel = $_POST['tel'];
 $date = date("d.m.y H:i");
@@ -11,6 +14,9 @@ $token = "1564372416:AAHLtmU_YXMHhCeTsMl3P_9IOD2gycOCehc";
 $chat_id = "-442195239";
 $arr = array(
   'Откуда заявка: ' => $hidden,
+  'Расскажите о продукте: ' => $textarea,
+  'Ваш бюджет: ' => $radio,
+  'Откуда вы о нас узнали?: ' => $radio_about,
   'Имя пользователя: ' => $name,
   'Телефон: ' => $tel,
   'Дата и время заявки: ' => $date

@@ -6,6 +6,7 @@
 $hidden = $_POST['hidden'];
 $name = $_POST['name'];
 $tel = $_POST['tel'];
+$email = $_POST['email'];
 $date = date("d.m.y H:i");
 $token = "1564372416:AAHLtmU_YXMHhCeTsMl3P_9IOD2gycOCehc";
 $chat_id = "-442195239";
@@ -13,6 +14,7 @@ $arr = array(
   'Откуда заявка: ' => $hidden,
   'Имя пользователя: ' => $name,
   'Телефон: ' => $tel,
+  'Email: ' => $email,
   'Дата и время заявки: ' => $date
 );
 
