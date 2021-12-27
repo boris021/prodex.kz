@@ -1324,7 +1324,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 .footer {
   background: #0F54B9;
-  padding: 30px 0;
+  padding: 30px 0 20px 0;
 }
 
 .footer__body {
@@ -1424,6 +1424,30 @@ body._touch .menu__list > li._active .menu__arrow {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 22px;
+  color: #fff;
+}
+
+.footer__copyrait {
+  margin-top: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  flex-wrap: wrap;
+}
+.footer__copyrait span {
+  flex: 0 0 auto;
+}
+@media (max-width: 767.98px) {
+  .footer__copyrait span {
+    margin: auto;
+  }
+}
+.footer__copyrait span:not(:last-child) {
+  margin-bottom: 8px;
+}
+.footer__copyrait a {
   color: #fff;
 }
 
@@ -3390,7 +3414,11 @@ textarea {
 }
 
 .block-form-input {
-  margin: 10px 0 20px 0;
+  margin: 10px 0 0px 0;
+}
+
+.block-form-phone {
+  margin: 30px 0 30px 0;
 }
 
 .block-form__button {
