@@ -1181,6 +1181,7 @@ body._touch .menu__list > li._active .menu__arrow {
   margin-top: 20px;
   color: #fff;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-size: 14px;
   font-weight: 400;
@@ -1194,8 +1195,10 @@ body._touch .menu__list > li._active .menu__arrow {
     margin: auto;
   }
 }
-.footer__copyrait span:not(:last-child) {
-  margin-bottom: 8px;
+@media (max-width: 479.98px) {
+  .footer__copyrait span {
+    margin-bottom: 8px;
+  }
 }
 .footer__copyrait a {
   color: #fff;
