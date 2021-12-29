@@ -1,40 +1,3 @@
-//<анимация>====================================================================================================
-.pulse:hover {
-	animation: none;
-}
-
-@-webkit-keyframes pulse {
-	0% {
-		-webkit-box-shadow: 0 0 0 0 rgba(37, 87, 159, 0.4);
-	}
-
-	70% {
-		-webkit-box-shadow: 0 0 0 10px rgba(37, 87, 159, 0);
-	}
-
-	100% {
-		-webkit-box-shadow: 0 0 0 0 rgba(37, 87, 159, 0);
-	}
-}
-
-@keyframes pulse {
-	0% {
-		-moz-box-shadow: 0 0 0 0 rgba(37, 87, 159, 0.4);
-		box-shadow: 0 0 0 0 rgba(37, 87, 159, 0.4);
-	}
-
-	70% {
-		-moz-box-shadow: 0 0 0 10px rgba(37, 87, 159, 0);
-		box-shadow: 0 0 0 10px rgba(37, 87, 159, 0);
-	}
-
-	100% {
-		-moz-box-shadow: 0 0 0 0 rgba(37, 87, 159, 0);
-		box-shadow: 0 0 0 0 rgba(37, 87, 159, 0);
-	}
-}
-
-
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 .title {}
 
@@ -167,88 +130,6 @@ body.ie {
 }
 
 //====================================================================================================
-._video {
-	position: relative;
-	overflow: hidden;
-	height: 0;
-	padding-bottom: 56.25%;
-
-	video,
-	iframe,
-	object,
-	embed {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
-}
-
-.videobg {
-
-	video,
-	iframe,
-	object,
-	embed {
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		min-width: 100%;
-		min-height: 100%;
-		width: auto;
-		height: auto;
-		z-index: -100;
-		transform: translateX(-50%) translateY(-50%);
-		background-size: cover;
-	}
-}
-
-//====================================================================================================
-// ._more-block
-._more-block {}
-
-// ._more-content
-._more-content {
-	transition: all 0.3s ease 0s;
-	overflow: hidden;
-}
-
-// ._more-item
-._more-item {}
-
-// ._more-link
-._more-link {
-	cursor: pointer;
-
-	span {
-		font-style: normal;
-
-		&:first-child {
-			display: block;
-		}
-
-		&:last-child {
-			display: none;
-		}
-	}
-
-	&._active {
-		span {
-			font-style: normal;
-
-			&:first-child {
-				display: none;
-			}
-
-			&:last-child {
-				display: block;
-			}
-		}
-	}
-}
-
-//====================================================================================================
 %graystyle {
 	transition: all 0.3s ease 0s;
 	filter: grayscale(1);
@@ -264,10 +145,6 @@ body.ie {
 	-o-filter: grayscale(0);
 }
 
-//====================================================================================================
-#map {
-	background: url("../img/icons/loading.gif") center / 50px no-repeat;
-}
 
 //====================================================================================================
 ._swiper {
@@ -313,33 +190,6 @@ body.ie {
 .swiper-button-lock {
 	display: none !important;
 }
-
-
-
-//====================================================================================================
-._tabs {}
-
-._tabs-item {}
-
-._tabs-block {
-	display: none;
-
-	&._active {
-		display: block;
-	}
-}
-
-//=====================================================================================================================
-.mirror {
-	transform: scale(-1, 1);
-}
-
-//=====================================================================================================================
-.nicescroll-rails {
-	z-index: 1000 !important;
-}
-
-//========================================================================================================================================================
 
 //========================================================================================================================================================
 ._custom-scroll {
