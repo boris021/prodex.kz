@@ -219,10 +219,11 @@ body._lock {
   color: #fff;
   border-radius: 10px;
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-align: center;
   line-height: 60px;
   padding-left: 25px;
+  font-size: 18px;
 }
 .phone__border::after {
   content: "";
@@ -258,8 +259,6 @@ body._lock {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
-  background: #25579F;
-  border: 1px solid #054373;
   padding: 10px;
   min-height: 60px;
   color: #fff;
@@ -286,6 +285,18 @@ body._lock {
   width: 100%;
   border-radius: 8px;
   height: 100%;
+}
+
+.header__bnt-social-whatsapp {
+  background-color: #43D854;
+}
+
+.header__bnt-social-telegram {
+  background-color: #0088CC;
+}
+
+.header__bnt-social-instagram {
+  background: linear-gradient(90deg, #405DE6 1.79%, #833AB4 100%);
 }
 
 .btn-white {
@@ -829,9 +840,10 @@ body.ie ._ibg img {
   content: "";
   top: 12px;
   left: 13px;
-  background: url(../img/icons/ellipse.svg) no-repeat;
   width: 7px;
   height: 7px;
+  border-radius: 50%;
+  background-color: #fff;
 }
 
 .header__label-text {
