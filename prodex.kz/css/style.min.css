@@ -213,6 +213,7 @@ body._lock {
   position: relative;
   display: block;
   margin: auto;
+  max-width: 260px;
   background: #054373;
   min-height: 60px;
   color: #fff;
