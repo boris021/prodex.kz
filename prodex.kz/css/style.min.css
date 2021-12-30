@@ -638,6 +638,13 @@ body.ie ._ibg img {
   width: 100%;
 }
 
+._tabs-block {
+  display: none;
+}
+._tabs-block._active {
+  display: block;
+}
+
 .popup {
   -webkit-overflow-scrolling: touch;
   z-index: 100;
