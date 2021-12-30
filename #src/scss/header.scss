@@ -31,15 +31,19 @@
 	position: relative;
 	margin-bottom: 10px;
 
-	&::before {
-		position: absolute;
-		content: '';
-		top: 12px;
-		left: 13px;
-		background: url(../img/icons/ellipse.svg) no-repeat;
-		width: 7px;
-		height: 7px;
+	& span {
+		&::before {
+			position: absolute;
+			content: '';
+			top: 12px;
+			left: 13px;
+			background: url(../img/icons/ellipse.svg) no-repeat;
+			width: 7px;
+			height: 7px;
+		}
 	}
+
+
 }
 
 .header__label-text {
