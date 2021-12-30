@@ -9,6 +9,46 @@
 	box-shadow: 0px 4px 4px rgba(127, 145, 190, 0.1);
 }
 
+@media (min-width:$md2+px) {
+
+	.header__label,
+	.header__label-text {
+		display: none;
+	}
+}
+
+.header__label {
+	width: 120px;
+	margin: auto;
+	text-align: center;
+	background: #1FCC4F;
+	border-radius: 6px;
+	padding: 7px 15px 7px 22px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	color: $whiteColor;
+	position: relative;
+	margin-bottom: 10px;
+
+	&::before {
+		position: absolute;
+		content: '';
+		top: 12px;
+		left: 13px;
+		background: url(../img/icons/ellipse.svg) no-repeat;
+		width: 7px;
+		height: 7px;
+	}
+}
+
+.header__label-text {
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 120%;
+}
+
 .header__container {
 	max-width: 1170px;
 	margin: 0 auto;
@@ -331,7 +371,6 @@ body._touch .menu__list>li._active .menu__arrow {
 }
 
 .social__mob,
-.social__list,
 .header__phone-mob,
 .header__btn-mob {
 	display: none;
@@ -343,31 +382,35 @@ body._touch .menu__list>li._active .menu__arrow {
 		align-items: center;
 		justify-content: center;
 	}
+}
 
-	.social__list {
-		font-size: 30px;
-		display: block;
-		margin-top: 50px;
-		margin-right: 20px;
-		color: #0F54B9;
+.blink {
+	animation-name: blinker;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
+	animation-duration: 2s;
+	-webkit-animation-name: blinker;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
+	-webkit-animation-duration: 2s;
+}
 
-		&:last-child {
-			margin-right: 0;
-		}
+@keyframes blinker {
+	from {
+		opacity: 1.0;
 	}
 
-	.header__phone-mob {
-		font-family: "Montserrat";
-		font-weight: 600;
-		font-size: 26px;
-		display: block;
-		text-align: center;
-		color: $blackColor;
-		margin: 25px 0px 25px 0px;
+	to {
+		opacity: 0.0;
+	}
+}
+
+@-webkit-keyframes blinker {
+	from {
+		opacity: 1.0;
 	}
 
-	.header__btn-mob {
-		display: block;
-		text-align: center;
+	to {
+		opacity: 0.0;
 	}
 }
