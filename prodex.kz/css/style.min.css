@@ -2920,6 +2920,13 @@ td.left span img {
 }
 
 /* конец таблицы */
+.table-text {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+  line-height: 130%;
+}
+
 .order {
   margin-bottom: 70px;
 }

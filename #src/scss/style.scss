@@ -1191,6 +1191,13 @@ td.left {
 
 /* конец таблицы */
 
+.table-text {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 30px;
+	line-height: 130%;
+}
+
 .order {
 	@include adaptiv-value("margin-bottom", 70, 40, 1);
 }
