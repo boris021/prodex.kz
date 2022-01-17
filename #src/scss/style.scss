@@ -1169,6 +1169,11 @@ td.left {
 	transition: all 0.3s ease 0s;
 }
 
+.table tr.disable-bg:hover {
+	background-color: #fff;
+	transition: all 0.3s ease 0s;
+}
+
 .table td {
 	&.prise-table {
 		font-size: 22px;

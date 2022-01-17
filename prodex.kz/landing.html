@@ -249,14 +249,14 @@
 											<td class="left"><span class="tippy12"><img src="img/icons/help.svg"
 														alt="help"></span>Отслеживание целей и конверсий</td>
 											<td><img src="img/table/delete.png" alt="line"></td>
-											<td><img src="img/table/delete.png" alt="line"></td>
+											<td><img src="img/table/check.png" alt="check"></td>
 											<td><img src="img/table/check.png" alt="check"></td>
 										</tr>
 										<tr>
 											<td class="left"><span class="tippy10"><img src="img/icons/help.svg"
 														alt="help"></span>Корпоративная почта</td>
 											<td><img src="img/table/delete.png" alt="line"></td>
-											<td><img src="img/table/delete.png" alt="line"></td>
+											<td><img src="img/table/check.png" alt="check"></td>
 											<td><img src="img/table/check.png" alt="check"></td>
 										</tr>
 										<tr>
@@ -288,22 +288,23 @@
 											<td><img src="img/table/check.png" alt="check"></td>
 										</tr>
 										<tr>
-											<td class="left"><span>Стоимость работ</span></td>
+											<td class="left"><span>Подарочный домен и хостинг (на 1 год)</span></td>
 											<td><img src="img/table/delete.png" alt="line"></td>
 											<td><img src="img/table/check.png" alt="check"></td>
 											<td><img src="img/table/check.png" alt="check"></td>
 										</tr>
 										<tr>
-											<td class="left"><span>Подарочный домен и хостинг (на 1 год)</span></td>
+											<td class="left"><span>Стоимость работ</span></td>
 											<td class="prise-table">50 тыс. тг.</td>
 											<td class="prise-table">100 тыс. тг.</td>
 											<td class="prise-table">360 тыс. тг.</td>
 										</tr>
-										<tr>
+
+										<tr class="disable-bg">
 											<td class="left"></td>
-											<td><a href="#lp-base" class="button btn-blue _popup-link">Заказать</a></td>
-											<td><a href="#lp-vr" class="button btn-blue _popup-link">Заказать</a></td>
-											<td><a href="#lp-vr" class="button btn-blue _popup-link">Заказать</a></td>
+											<td><a href="#lp-start" class="button btn-blue _popup-link">Заказать</a></td>
+											<td><a href="#lp-standart" class="button btn-blue _popup-link">Заказать</a></td>
+											<td><a href="#lp-prof" class="button btn-blue _popup-link">Заказать</a></td>
 										</tr>
 									</tbody>
 								</table>
@@ -750,16 +751,16 @@
 	</div>
 </div>
 
-<!-- LP Базовое решение -->
-<div class="popup popup_lp-base">
+<!-- LP Старт решение -->
+<div class="popup popup_lp-start">
 	<div class="popup__content">
 		<div class="popup__body">
 			<div class="popup__close">X</div>
-			<div class="popup__title">Рассчитать <span>стоимость</span> бесплатно</div>
+			<div class="popup__title">Отправить <span>заявку</span> </div>
 			<div class="popup__forma">
 				<form data-message="send" data-ajax="true" action="telegram.php" method="POST" class="form">
 					<div class="form__line">
-						<input type="hidden" name="hidden" value="Landing Page - Базовое решение"></p>
+						<input type="hidden" name="hidden" value="Landing Page - Старт"></p>
 						<label for="inp" class="form__label">Введите ваше имя*</label>
 						<input id="inp" autocomplete="on" name="name" type="name" name="form[]"
 							data-error="Вы не заполнили поле имя" data-value="" placeholder="Ваше имя" class="input _req">
@@ -771,12 +772,6 @@
 							class="input _phone _req">
 					</div>
 					<button type="submit" class="button btn-blue form__button">Отправить заявку</button>
-					<div class="checkbox">
-						<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req"
-							data-error="Вы не поставили галочку!">
-						<label for="formAgreement" class="checkbox__label"><span>Вы соглашаетесь с <a href="#policy"
-									class="_popup-link">политикой конфиденциальности</a></span></label>
-					</div>
 				</form>
 			</div>
 			<div class="popup_circle-top"><img src="img/circle-popup.svg" alt="circle"></div>
@@ -785,16 +780,16 @@
 	</div>
 </div>
 
-<!-- LP Верстка -->
-<div class="popup popup_lp-vr">
+<!-- LP Стандарт -->
+<div class="popup popup_lp-standart">
 	<div class="popup__content">
 		<div class="popup__body">
 			<div class="popup__close">X</div>
-			<div class="popup__title">Рассчитать <span>стоимость</span> бесплатно</div>
+			<div class="popup__title">Отправить <span>заявку</span> </div>
 			<div class="popup__forma">
 				<form data-message="send" data-ajax="true" action="telegram.php" method="POST" class="form">
 					<div class="form__line">
-						<input type="hidden" name="hidden" value="Landing Page - Верстка"></p>
+						<input type="hidden" name="hidden" value="Landing Page - Стандарт"></p>
 						<label for="inp" class="form__label">Введите ваше имя*</label>
 						<input id="inp" autocomplete="on" name="name" type="name" name="form[]"
 							data-error="Вы не заполнили поле имя" data-value="" placeholder="Ваше имя" class="input _req">
@@ -806,12 +801,35 @@
 							class="input _phone _req">
 					</div>
 					<button type="submit" class="button btn-blue form__button">Отправить заявку</button>
-					<div class="checkbox">
-						<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req"
-							data-error="Вы не поставили галочку!">
-						<label for="formAgreement" class="checkbox__label"><span>Вы соглашаетесь с <a href="#policy"
-									class="_popup-link">политикой конфиденциальности</a></span></label>
+				</form>
+			</div>
+			<div class="popup_circle-top"><img src="img/circle-popup.svg" alt="circle"></div>
+			<div class="popup_circle-bottom"><img src="img/circle-popup-bottum.svg" alt="circle"></div>
+		</div>
+	</div>
+</div>
+
+<!-- LP Профи -->
+<div class="popup popup_lp-prof">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close">X</div>
+			<div class="popup__title">Отправить <span>заявку</span> </div>
+			<div class="popup__forma">
+				<form data-message="send" data-ajax="true" action="telegram.php" method="POST" class="form">
+					<div class="form__line">
+						<input type="hidden" name="hidden" value="Landing Page - Профи"></p>
+						<label for="inp" class="form__label">Введите ваше имя*</label>
+						<input id="inp" autocomplete="on" name="name" type="name" name="form[]"
+							data-error="Вы не заполнили поле имя" data-value="" placeholder="Ваше имя" class="input _req">
 					</div>
+					<div class="form__line">
+						<label for="inp2" class="form__label">Введите ваш телефон*</label>
+						<input id="inp2" autocomplete="on" name="tel" type="tel" name="form[]"
+							data-error="Вы не заполнили поле телефон" data-value="" placeholder="+7 700 000 0000"
+							class="input _phone _req">
+					</div>
+					<button type="submit" class="button btn-blue form__button">Отправить заявку</button>
 				</form>
 			</div>
 			<div class="popup_circle-top"><img src="img/circle-popup.svg" alt="circle"></div>
