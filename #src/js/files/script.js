@@ -109,3 +109,10 @@ tippy('.tippy16', {
 	placement: 'top',
 	animation: 'fade',
 });
+
+tippy('.tippy17', {
+	content: "Подарочный домен и хостинг на 1 год",
+	arrow: true,
+	placement: 'top',
+	animation: 'fade',
+});
