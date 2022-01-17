@@ -1101,9 +1101,9 @@ body {
 .table th {
 	text-align: left;
 	background: #FBE191;
-	padding: 30px;
+	padding: 25px;
 	font-weight: 600;
-	font-size: 18px;
+	font-size: 20px;
 	color: #000000;
 
 	@media (max-width:$md4+px) {
@@ -1120,7 +1120,7 @@ th.center {
 		display: block;
 		margin-top: 6px;
 		font-size: 13px;
-		font-weight: 400;
+		font-weight: 500;
 		line-height: 130%;
 	}
 }
@@ -1144,6 +1144,7 @@ td.left {
 	text-align: left;
 	line-height: 110%;
 	margin-right: 5px;
+	width: 33%;
 
 	& span {
 		color: $blueColor;
