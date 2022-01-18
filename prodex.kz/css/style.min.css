@@ -2366,7 +2366,7 @@ body._touch .menu__list > li._active .menu__arrow {
   display: block;
   margin: auto;
   flex: 0 1 262px;
-  padding: 23px;
+  padding: 20px;
   margin-bottom: 30px;
   transition: box-shadow 0.3s ease 0s;
 }
@@ -2415,7 +2415,6 @@ body._touch .menu__list > li._active .menu__arrow {
   text-align: center;
   font-size: 14px;
   line-height: 17px;
-  max-width: 195px;
   margin-bottom: 17px;
 }
 
