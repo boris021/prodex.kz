@@ -3234,7 +3234,7 @@ td.left span img {
 .site__text {
   font-weight: normal;
   font-size: 18px;
-  line-height: 130%;
+  line-height: 140%;
   margin-bottom: 10px;
 }
 @media (max-width: 1170px) {
@@ -3244,7 +3244,8 @@ td.left span img {
 }
 .site__text a {
   font-family: "Montserrat";
-  font-weight: 500;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 @media (max-width: 479.98px) {

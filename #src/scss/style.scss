@@ -1448,12 +1448,13 @@ td.left {
 .site__text {
 	font-weight: normal;
 	@include adaptiv-value("font-size", 18, 14, 1);
-	line-height: 130%;
+	line-height: 140%;
 	margin-bottom: 10px;
 
 	& a {
 		font-family: 'Montserrat';
-		font-weight: 500;
+		font-weight: 600;
+		white-space: nowrap;
 	}
 }
 
