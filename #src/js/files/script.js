@@ -263,3 +263,9 @@ tippy('.tippy38', {
 	placement: 'top',
 	animation: 'fade',
 });
+tippy('.tippy39', {
+	content: "Детально покажем как легко и просто пользоваться вашим новым сайтом.",
+	arrow: true,
+	placement: 'top',
+	animation: 'fade',
+});
