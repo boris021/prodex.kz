@@ -24,10 +24,13 @@
 		"gulp-uglify-es": "latest",
 		"gulp-version-number": "latest",
 		"gulp-webp-html": "latest",
-		"gulp-webpcss": "latest",
+		"gulp-webpcss": "^1.1.1",
 		"imagemin-webp": "latest",
 		"sass": "latest",
 		"transform-runtime": "0.0.0",
 		"webp-converter": "2.2.3"
+	},
+	"dependencies": {
+		"gulp-webp-css": "^1.1.0"
 	}
 }
